@@ -4,44 +4,57 @@
         <pattern>*</pattern>
         <template>Hi, I'm jobfinder. 
         I can help you identify an IT field which suits you most. Which of the following have you enjoyed doing or learning about most? 
-        <ul>
-            <li>Coding</li>
-            <li>Networks</li>
-            <li>Cybersecurity</li>
-            <li>Data</li>
-            <li>Cloud</li>
-        </ul>
+        
+        <reply>
+            <text>Coding</text>
+            <postback>Rcoding</postback>
+        </reply>
+        
+        <reply>
+            <text>Networks</text>
+            <postback>Rnetworks</postback>
+        </reply>
+        
+        <reply>
+            <text>Cybersecurity</text>
+            <postback>Rcyber</postback>
+        </reply>
+        
+        <reply>
+            <text>Data</text>
+            <postback>Rdata</postback>
+        </reply>
+        
+        <reply>
+            <text>Cloud</text>
+            <postback>Rcloud</postback>
+        </reply>
         </template>
     </category>
     
     <category>
-        <pattern>coding</pattern>
-        <that>LT UL GT LT LI GT CODING LT SLASH LI GT LT LI GT NETWORKS LT SLASH LI GT LT LI GT CYBERSECURITY LT SLASH LI GT LT LI GT DATA LT SLASH LI GT LT LI GT CLOUD LT SLASH LI GT LT SLASH UL GT</that>
-        <template>I recommend the job 'Software Developer.'</template>
-    </category>
-  
-    <category>
-        <pattern>networks</pattern>
-        <that>LT UL GT LT LI GT CODING LT SLASH LI GT LT LI GT NETWORKS LT SLASH LI GT LT LI GT CYBERSECURITY LT SLASH LI GT LT LI GT DATA LT SLASH LI GT LT LI GT CLOUD LT SLASH LI GT LT SLASH UL GT</that>
-        <template>I recommend the job 'Network Engineer.'</template>
-    </category>
-  
-    <category>
-        <pattern>cybersecurity</pattern>
-        <that>LT UL GT LT LI GT CODING LT SLASH LI GT LT LI GT NETWORKS LT SLASH LI GT LT LI GT CYBERSECURITY LT SLASH LI GT LT LI GT DATA LT SLASH LI GT LT LI GT CLOUD LT SLASH LI GT LT SLASH UL GT</that>
-        <template>I recommend the job 'Penetration Tester.'</template>
+        <pattern>Rcoding</pattern>
+        <template>I recommend considering a Software Developer job.</template>
     </category>
     
     <category>
-        <pattern>data</pattern>
-        <that>LT UL GT LT LI GT CODING LT SLASH LI GT LT LI GT NETWORKS LT SLASH LI GT LT LI GT CYBERSECURITY LT SLASH LI GT LT LI GT DATA LT SLASH LI GT LT LI GT CLOUD LT SLASH LI GT LT SLASH UL GT</that>
-        <template>I recommend the job 'Data Analyst.'</template>
+        <pattern>Rnetworks</pattern>
+        <template>I recommend considering a Network Engineer job.</template>
     </category>
-  
+    
     <category>
-        <pattern>cloud</pattern>
-        <that>LT UL GT LT LI GT CODING LT SLASH LI GT LT LI GT NETWORKS LT SLASH LI GT LT LI GT CYBERSECURITY LT SLASH LI GT LT LI GT DATA LT SLASH LI GT LT LI GT CLOUD LT SLASH LI GT LT SLASH UL GT</that>
-        <template>I recommend the job 'Business intelligence architect.'</template>
+        <pattern>Rcyber</pattern>
+        <template>I recommend considering a Penetration Tester job.</template>
     </category>
-  
+    
+    <category>
+        <pattern>Rdata</pattern>
+        <template>I recommend considering a Data Analyst job.</template>
+    </category>
+    
+    <category>
+        <pattern>Rcloud</pattern>
+        <template>I recommend considering a Cloud Computing Engineer job.</template>
+    </category>
+    
 </aiml>
