@@ -3,7 +3,7 @@
     <category>
         <pattern>*</pattern>
         <template>Hi, I'm jobfinder. 
-        I can help you identify an IT field which suits you most. Which of the following have you enjoyed doing or learning about most? 
+        I can help you identify an IT field which suits you most. Which of the following have you enjoyed doing or learning about most and have had the most success in? 
         
         <reply>
             <text>Coding</text>
